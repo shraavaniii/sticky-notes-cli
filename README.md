@@ -10,12 +10,12 @@ A simple Bash script to manage sticky notes from terminal.
 - Fully written in shell script
 
 ## Project Structure
-sticky-notes-cli/
- |--add-notes.sh
- |--view-notes.sh
- |--search-notes.sh
- |--delete-notes.sh
- |--notes/        #Stores all note files
+sticky-notes-cli/  
+ |--add-notes.sh  
+ |--view-notes.sh  
+ |--search-notes.sh  
+ |--delete-notes.sh  
+ |--notes/        #Stores all note files  
  |--sticky-notes.sh      #Main script to run the app
 
  ## Requirements
