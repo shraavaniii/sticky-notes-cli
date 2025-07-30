@@ -28,13 +28,17 @@ sticky-notes-cli/
 ```bash
 git clone https://github.com/shraavaniii/sticky-notes-cli.git
 cd sticky-notes-cli
+```
 
 2. **Make the main script executable**
 ```bash
 chmod +x stick-notes.sh
+```
 
 3. **Run the app**
+```bash
 ./sticky-notes.sh
+```
 
 4. **Once you run the script, you will see menu like this:**
 
