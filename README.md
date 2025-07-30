@@ -62,6 +62,6 @@ All notes are stored in a local text file(e.g., notes.txt) in a simple readable 
 - Password-protected notes
 
 ## Author
-**Shravani Hendre**
-shravanihendr@gmail.com
-https://github.com/shraavaniii
+**Shravani Hendre**  
+Email ID: shravanihendr@gmail.com  
+Github Repository: https://github.com/shraavaniii
