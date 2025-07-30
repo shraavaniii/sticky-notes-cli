@@ -1,0 +1,21 @@
+#!/bin/bash
+# Author:  Shravani Hendre
+# Date:  Wed Jul 30 02:56:21 PM IST 2025
+# Description:  This script will delete notes as per user input
+# Modified date:  Wed Jul 30 02:56:21 PM IST 2025
+#################################################
+
+clear
+cat notes.txt
+echo
+read -p "Enter ID to delete a note: " id
+
+grep -q "$id" notes.txt
+if [ $? -eq 0 ]; then
+	grep -v "^$id" notes.txt >> temp.txt && mv temp.txt notes.txt
+	echo "Note deleted successfully!"
+	echo
+else 
+	echo "No note with ID "$id" found - Bye!"
+	echo
+fi	

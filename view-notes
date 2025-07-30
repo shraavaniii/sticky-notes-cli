@@ -1,0 +1,11 @@
+#!/bin/bash
+# Author:  Shravani Hendre
+# Date:  Wed Jul 30 02:13:38 PM IST 2025
+# Description:  This script will display all the notes stored.
+# Modified date:  Wed Jul 30 02:13:38 PM IST 2025
+#################################################
+
+clear
+echo "Notes:"
+cat /home/shendre/sticknotes-inv/notes.txt
+echo

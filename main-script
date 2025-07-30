@@ -1,0 +1,23 @@
+#!/bin/bash
+# Author:  Shravani Hendre
+# Date:  Wed Jul 30 03:15:08 PM IST 2025
+# Description:  THis script combines all the scripts
+# Modified date:  Wed Jul 30 03:15:08 PM IST 2025
+#################################################
+
+clear
+echo "1. Add a note"
+echo "2. View a note"
+echo "3. Search a note"
+echo "4. Delete a note"
+echo
+read -p "Select a number: " choice
+
+	case "$choice" in
+		1) /home/shendre/sticknotes-inv/add-notes;;
+		2) /home/shendre/sticknotes-inv/view-notes;;
+		3) /home/shendre/sticknotes-inv/search-notes;;
+		4) /home/shendre/sticknotes-inv/delete-notes;;
+		*) echo "Invalid choice - -Bye!"
+	esac
+

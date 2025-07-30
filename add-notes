@@ -1,0 +1,27 @@
+#!/bin/bash
+# Author:  Shravani Hendre
+# Date:  Tue Jul 29 11:59:55 PM IST 2025
+# Description:  This script will add notes to the file as per user input
+# Modified date:  Tue Jul 29 11:59:55 PM IST 2025
+#################################################
+
+clear
+read -p "Enter enter the note ID: " id
+
+path="/home/shendre/sticknotes-inv/notes.txt"
+
+grep -q "$id"  "$path"
+if [ $? -eq 0 ]; then
+	echo "ERROR -- This ID has been already assigned. Please enter another ID!"
+	echo
+        exit 0
+fi	
+
+read -p "Enter your main content: " content
+read -p "Enter tag(todo, urgent, idea): ## " tag
+
+echo
+echo "Note added successfully!"
+echo
+
+echo $id $content "##"$tag >> /home/shendre/sticknotes-inv/notes.txt

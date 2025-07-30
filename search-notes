@@ -1,0 +1,20 @@
+#!/bin/bash
+# Author:  Shravani Hendre
+# Date:  Wed Jul 30 02:16:23 PM IST 2025
+# Description:  This script will search for a particular note required by the user
+# Modified date:  Wed Jul 30 02:16:23 PM IST 2025
+#################################################
+
+clear
+read -p "Enter a keyword to search a note : " keyword
+
+sentences=$(grep -i "$keyword" notes.txt)
+
+if [[ -n "$sentences" ]]; then
+	echo "$sentences"
+	echo "Note found!"
+	echo
+else
+	echo "Note not found - Bye!"
+	echo
+fi
